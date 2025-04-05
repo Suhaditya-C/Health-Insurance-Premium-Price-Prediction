@@ -11,6 +11,7 @@ The dataset used for this project contains the following features:
 •	Smoker: Whether the individual smokes (Yes/No).
 •	Region: The region where the insured person lives (Northeast, Northwest, Southeast, Southwest).
 •	Charges: The total insurance premium paid by the individual (Target variable).
+
 2. Data Collection and Preprocessing
 Data Exploration
 •	Loaded the dataset and checked for missing values. No missing values were found.
@@ -26,6 +27,7 @@ Feature Scaling
 Multicollinearity Check
 •	Used Variance Inflation Factor (VIF) to detect multicollinearity among features.
 •	All predictors had VIF <= 5, confirming that there was no significant multicollinearity in the dataset.
+
 3. Data Visualization and Analysis
 Correlation Analysis
 •	Plotted a correlation heatmap to observe relationships between independent variables and the target variable.
@@ -38,6 +40,7 @@ Individual Feature Analysis
 •	BMI vs Charges: Higher BMI values often lead to increased charges, indicating a possible link to health risks.
 •	Smoker vs Charges: Smokers pay significantly higher premiums compared to non-smokers.
 •	Region vs Charges: No significant difference in charges across regions.
+
 4. Model Training and Evaluation
 Linear Regression
 •	Implemented a Linear Regression model to predict insurance charges.
@@ -58,6 +61,7 @@ Lasso Regression
 •	Lasso penalizes less significant coefficients, making the model more interpretable.
 •	Evaluated performance using the same test set and compared results with Linear Regression.
 •	Lasso Regression also helped in feature selection by reducing coefficients of less important predictors to zero.
+
 5. Results and Key Findings
 •	The Linear Regression model provided reasonable accuracy in predicting insurance charges.
 •	The Lasso Regression model slightly improved interpretability by reducing the impact of less significant features.
@@ -67,6 +71,7 @@ Lasso Regression
 o	R-squared Score: ~0.75, indicating that 75% of the variation in charges is explained by the model.
 o	RMSE: A measure of prediction accuracy, showing how far predictions deviate from actual values on average.
 o	MAE: Lower values indicate better prediction accuracy.
+
 6. Future Improvements
 •	Experiment with more advanced models such as Ridge Regression, Decision Trees, or Random Forests.
 •	Apply hyperparameter tuning to improve model accuracy.
@@ -74,6 +79,7 @@ o	MAE: Lower values indicate better prediction accuracy.
 •	Investigate interaction effects between features to improve prediction accuracy.
 •	Explore deep learning models, such as neural networks, for improved prediction capabilities.
 •	Perform feature engineering to create new informative features that could enhance model performance.
+
 7. Conclusion
 This project successfully developed a predictive model for health insurance premiums using linear regression techniques. The analysis showed that age, BMI, and smoking status play a crucial role in determining insurance costs. Future enhancements could involve using non-linear models and optimizing feature selection for better accuracy. Additionally, implementing ensemble learning techniques may further improve predictive performance.
 
