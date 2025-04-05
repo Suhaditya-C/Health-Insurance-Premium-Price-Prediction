@@ -1,4 +1,5 @@
 # Health Insurance Premium Price Prediction
+
 1. Introduction
 Objective
 The objective of this project is to develop a predictive model to estimate health insurance premiums based on various demographic and health-related factors such as age, BMI, smoking habits, number of children, and region. By analyzing these variables, we aim to understand their impact on insurance charges and build an accurate regression model for premium prediction.
